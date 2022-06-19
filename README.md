@@ -3,6 +3,12 @@
 
 Tanahin is a platform for selling, buying, repaying, and auctioning land with superior profiling features to make it easier to make installments and research data to help the public know the price of land.
 
+## Our Team
+1. Muhammad Rizal Bimantoro (Product Manager) : https://www.linkedin.com/in/rebimantoro/
+2. Yohanes Nico Kristiawan (UI/UX Designer) : https://www.linkedin.com/in/yohanesnick/
+3. M. Faiz Triputra (Backend Developer) : https://www.linkedin.com/in/mfaiztriputra/
+4. David William da Costa (Mobile Developer) : https://www.linkedin.com/in/davidwilliamdacosta/
+
 ## Feature
 1. Profiling integrated with 3rd party (Brick)
 2. Installment
