@@ -43,9 +43,9 @@ const Profiling = ({navigation}) => {
     axios
       .post('https://tanahin.mfaiztriputra.id/api/login', data, config)
       .then(res => {
-        console.log('success', res.data);;
-        storeData('users', res.data);;
-        navigation.navigate('MainApp');;
+        console.log('success', res.data);
+        storeData('users', res.data);
+        navigation.navigate('MainApp');
       })
       .catch(err => {
         console.log('error:', err.response.data.message);
@@ -77,7 +77,7 @@ const Profiling = ({navigation}) => {
         console.log(err)
     })
 
-  }, []);
+  }, [value]);
   return (
     <VStack px={'25px'} pt={'30px'} bg={'white'} h={'full'}>
       {/* bagian header authentication */}

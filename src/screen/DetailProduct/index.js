@@ -21,8 +21,11 @@ import { Animated, Dimensions, StyleSheet, useWindowDimensions } from 'react-nat
 import StickyParallaxHeader from 'react-native-sticky-parallax-header';
 import { SceneMap, TabBar, TabView } from 'react-native-tab-view';
 import {
+  ArrowDown,
+  ArrowUp,
   BackIcon,
   CategoriesLand,
+  ChartLand,
   ColorPalette,
   Description,
   LikesButton,
@@ -134,7 +137,117 @@ const FirstRoute = () => (
 );
 
 const SecondRoute = () => (
-  <View style={{ flex: 1, backgroundColor: '#32a852' }} />
+  <View style={{ flex: 1, backgroundColor: 'white', paddingVertical: 20 }}>
+    <VStack px={'25px'} h={'full'} >
+      <HStack alignItems={'center'}>
+        <Icon as={<Description />} mr={'3px'} />
+        <Heading fontSize={'14'} fontWeight={'medium'}>
+          Description City
+        </Heading>
+      </HStack>
+      <Text fontSize={'12px'} fontFamily={'body'} pl={'25px'} mb={'10px'}>
+        Jakarta is the capital city of Indonesia. Have good prospects in the future for both a place to live and a long-term investment. Has a relatively stable price
+      </Text>
+
+      <HStack alignItems={'center'} mt={'8px'}>
+        <Icon as={<ChartLand />} mr={'3px'} />
+        <Heading fontSize={'14'} fontWeight={'medium'}>
+          Chart of Land
+        </Heading>
+      </HStack>
+      {/* bagian section land */}
+      <HStack mt={'4'}>
+        <Text fontSize={'15px'} fontWeight={'semibold'} mr={'3'}>#1</Text>
+        <HStack>
+          <Image
+            source={{
+              uri: 'https://awsimages.detik.net.id/community/media/visual/2022/05/03/presiden-joko-widodo-jokowi-3_169.jpeg?w=1200'
+            }}
+            alt="images"
+            size={60}
+            resizeMode="contain"
+            borderRadius={10}
+          />
+          <Stack justifyContent={'center'} ml={'3'}>
+            <Text fontSize={'13px'} mb={'2'}>DKI Jakarta</Text>
+            <Text fontSize={'13px'} color={'#949494'}>berkisar 100 - 200 juta</Text>
+          </Stack>
+          <HStack justifyContent={'center'} alignItems={'center'} ml={'35px'}>
+            <ArrowUp />
+            <Text color={'#49DD63'} ml={'8px'}>+ 18,94 %</Text>
+          </HStack>
+        </HStack>
+      </HStack>
+      {/* bagian akhir section land */}
+      {/* bagian section land */}
+      <HStack mt={'4'}>
+        <Text fontSize={'15px'} fontWeight={'semibold'} mr={'3'}>#2</Text>
+        <HStack>
+          <Image
+            source={{
+              uri: 'https://awsimages.detik.net.id/community/media/visual/2022/05/03/presiden-joko-widodo-jokowi-3_169.jpeg?w=1200'
+            }}
+            alt="images"
+            size={60}
+            resizeMode="contain"
+            borderRadius={10}
+          />
+          <Stack justifyContent={'center'} ml={'3'}>
+            <Text fontSize={'13px'} mb={'2'}>Bandung</Text>
+            <Text fontSize={'13px'} color={'#949494'}>berkisar 100 - 150 juta</Text>
+          </Stack>
+          <HStack justifyContent={'center'} alignItems={'center'} ml={'35px'}>
+            <ArrowDown />
+            <Text color={'#FF5035'} ml={'8px'}>+ 18,94 %</Text>
+          </HStack>
+        </HStack>
+      </HStack>
+      {/* bagian akhir section land */}
+      {/* bagian section land */}
+      <HStack mt={'4'}>
+        <Text fontSize={'15px'} fontWeight={'semibold'} mr={'3'}>#3</Text>
+        <HStack>
+          <Image
+            source={{
+              uri: 'https://awsimages.detik.net.id/community/media/visual/2022/05/03/presiden-joko-widodo-jokowi-3_169.jpeg?w=1200'
+            }}
+            alt="images"
+            size={60}
+            resizeMode="contain"
+            borderRadius={10}
+          />
+          <Stack justifyContent={'center'} ml={'3'}>
+            <Text fontSize={'13px'} mb={'2'}>Malang</Text>
+            <Text fontSize={'13px'} color={'#949494'}>berkisar 100 - 120 juta</Text>
+          </Stack>
+          <HStack justifyContent={'center'} alignItems={'center'} ml={'35px'}>
+            <ArrowDown />
+            <Text color={'#FF5035'} ml={'8px'}>+ 18,94 %</Text>
+          </HStack>
+        </HStack>
+      </HStack>
+      {/* bagian akhir section land */}
+      <HStack alignItems={'center'} mt={'12px'}>
+        <Icon as={<Description />} mr={'10px'} />
+        <Heading fontSize={'14'} fontWeight={'medium'}>
+          Location
+        </Heading>
+      </HStack>
+      <AspectRatio ratio={16 / 9} height={200}>
+        <Image
+          source={{
+            uri: 'https://www.google.com/maps/d/thumbnail?mid=1inywyK4JiYKiAEQpB5yLTrR-Koo&hl=en_US'
+          }}
+          alt="images"
+          w={'100%'}
+          // h={'200px'}
+          resizeMode="cover"
+          mt={'3'}
+          borderRadius={10}
+        />
+      </AspectRatio>
+    </VStack>
+  </View>
 );
 
 const renderScene = SceneMap({
@@ -210,7 +323,7 @@ const DetailProduct = ({ navigation }) => {
           <Animated.Image
             style={style.banner(scrollA)}
             source={{
-              uri: 'https://images.unsplash.com/photo-1578587018452-892bacefd3f2?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774',
+              uri: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bGFuZHxlbnwwfHwwfHw%3D&w=1000&q=80',
             }}
             alt="foto"></Animated.Image>
           {/* </AspectRatio> */}

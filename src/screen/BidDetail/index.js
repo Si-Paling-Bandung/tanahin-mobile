@@ -18,7 +18,7 @@ const BidDetail = ({ navigation }) => {
                 <Heading fontSize={'18px'} textAlign={'center'} mb={'15px'}>Sweater Polos Wanita</Heading>
                 <AspectRatio w={'full'} ratio={9 / 9}>
                     <Image
-                        source={{ uri: 'https://images.unsplash.com/photo-1578587018452-892bacefd3f2?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774' }}
+                        source={{ uri: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bGFuZHxlbnwwfHwwfHw%3D&w=1000&q=80' }}
                         alt="foto"
                         borderRadius={'2xl'}
                     >

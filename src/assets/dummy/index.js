@@ -6,6 +6,7 @@ import HeroSplash from './hero_splash.svg'
 import DataStoreHero from './dataStore_success.svg'
 import DummyResearch from './dummy-research.svg'
 import Auth from './auth.svg'
+import Tanahin from './tanahin.svg'
 
 export {
     Person,
@@ -15,5 +16,6 @@ export {
     Logo,
     DataStoreHero,
     DummyResearch,
-    Auth
+    Auth,
+    Tanahin
 }

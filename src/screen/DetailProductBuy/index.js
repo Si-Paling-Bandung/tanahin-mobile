@@ -289,7 +289,7 @@ const DetailProductBuy = ({ navigation }) => {
           <Animated.Image
             style={style.banner(scrollA)}
             source={{
-              uri: 'https://images.unsplash.com/photo-1578587018452-892bacefd3f2?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774',
+              uri: 'https://media.istockphoto.com/photos/empty-dry-cracked-swamp-reclamation-soil-picture-id1216087127?k=20&m=1216087127&s=612x612&w=0&h=jQf_c8fbWoN5cX4SfIGtfZzNHR51rphhrlebvJ1Hk8A=',
             }}
             alt="foto"></Animated.Image>
           <VStack

@@ -51,7 +51,7 @@ const ProfilingToken = ({navigation, route}) => {
         .then(res => {
           console.log('success', res);
           storeData('profile', res.data);
-          navigation.navigate('Profiling', res.data);
+          navigation.navigate('Profile', res.data);
         })
         .catch(err => {
           console.log('error:', err.response.data.message);

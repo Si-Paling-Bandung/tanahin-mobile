@@ -212,7 +212,7 @@ const Home = ({ navigation }) => {
                     <HStack>
                       <Stack space={2}>
                         <Heading size="md" fontSize={'14px'} ml="-1">
-                          Rp 100.000.000
+                          Rp 1.200.000/m2 
                         </Heading>
                       </Stack>
                     </HStack>
@@ -286,7 +286,7 @@ const Home = ({ navigation }) => {
                   <HStack>
                     <Stack space={2}>
                       <Heading size="md" fontSize={'14px'} ml="-1">
-                        Rp 100.000.000
+                        Rp 1.200.000/m2 
                       </Heading>
                     </Stack>
                   </HStack>
@@ -359,7 +359,7 @@ const Home = ({ navigation }) => {
                   <HStack>
                     <Stack space={2}>
                       <Heading size="md" fontSize={'14px'} ml="-1">
-                        Rp 100.000.000
+                        Rp 1.200.000/m2 
                       </Heading>
                     </Stack>
                   </HStack>
@@ -427,7 +427,7 @@ const Home = ({ navigation }) => {
                       <AspectRatio w="100%" ratio={16 / 9}>
                         <Image
                           source={{
-                            uri: 'https://images.unsplash.com/photo-1589571894960-20bbe2828d0a?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772',
+                            uri: 'https://media.istockphoto.com/photos/empty-dry-cracked-swamp-reclamation-soil-picture-id1216087127?k=20&m=1216087127&s=612x612&w=0&h=jQf_c8fbWoN5cX4SfIGtfZzNHR51rphhrlebvJ1Hk8A=',
                           }}
                           alt="image"
                           borderBottomRightRadius={'xl'}
@@ -667,9 +667,8 @@ const Home = ({ navigation }) => {
               mb="4"
               variant="solid"
               bg="white"
-              borderColor={'blue.400'}
+              borderColor={'#4FAD39'}
               borderWidth={'2'}
-              colorScheme="blue"
               borderRadius="full"
               icon={
                 <Icon
@@ -678,9 +677,9 @@ const Home = ({ navigation }) => {
                   name="location-pin"
                   onPress={() => navigation.navigate('Sell')}
                   _dark={{
-                    color: 'warmGray.50',
+                    color: '#4FAD39',
                   }}
-                  color="warmGray.50"
+                  color="#4FAD39"
                 />
               }
             />
@@ -688,19 +687,18 @@ const Home = ({ navigation }) => {
               mb="4"
               variant="solid"
               bg="white"
-              borderColor={'blue.400'}
+              borderColor={'#4FAD39'}
               borderWidth={'2'}
-              colorScheme="blue"
               borderRadius="full"
               icon={
                 <Icon
                   as={Auction}
                   _dark={{
-                    color: 'warmGray.50',
+                    color: '#4FAD39',
                   }}
                   size="6"
                   name="microphone"
-                  color="warmGray.50"
+                  color="#4FAD39"
                 />
               }
             />
@@ -708,7 +706,7 @@ const Home = ({ navigation }) => {
               mb="4"
               variant="solid"
               bg="white"
-              borderColor={'blue.400'}
+              borderColor={'#4FAD39'}
               borderWidth={'2'}
               colorScheme="blue"
               borderRadius="full"
@@ -717,11 +715,11 @@ const Home = ({ navigation }) => {
                   as={Rent}
                   onPress={() => navigation.navigate('Rents')}
                   _dark={{
-                    color: 'warmGray.50',
+                    color: '#4FAD39',
                   }}
                   size="6"
                   name="video"
-                  color="warmGray.50"
+                  color="#4FAD39"
                 />
               }
             />
