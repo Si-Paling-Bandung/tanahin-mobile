@@ -16,11 +16,12 @@ import Search from './search.svg'
 import Voice from './voice.svg'
 import Timer from './timer.svg'
 import BackIcon from './back_icon.svg'
+import Copy from './copy.svg'
 
 // icon category
-import Tshirt from './Category/tshirt 1.svg'
-import Hoodie from './Category/hoodie 1.svg'
-import Pants from './Category/pants 1.svg'
+import House from './Category/house 1.svg'
+import Office from './Category/office 1.svg'
+import Planting from './Category/planting 1.svg'
 import More from './Category/more.svg'
 
 // icon floating button
@@ -34,19 +35,31 @@ import EyeOpen from './eye_open.svg'
 import EyeClose from './eye_close.svg'
 
 // icon detail product
-import Description from './Description.svg'
 import Shirt from './shirt.svg'
 import ColorPalette from './color-pallete.svg'
 import StoreIcon from './back_button.svg'
 import StarReview from './star.svg'
 
 // icon bid
-import BidSuccessHero from './BidSuccessHero.svg'
+import BidSuccessHero from './work-time/pana.svg'
+
+// icon region
+import Jakarta from './region/jakarta.svg'
+import Bandung from './region/bandung.svg'
+import Jogja from './region/jogja.svg'
+import Surabaya from './region/surabaya.svg'
+import Bogor from './region/bogo.svg'
+import Solo from './region/solo.svg'
+
+// icon detail product
+import Description from './Description.svg'
+import Person from './person.svg'
+import CategoriesLand from './categoryLand.svg'
+import ChartLand from './Chart-land.svg'
+import ArrowUp from './arrow-up.svg'
+import ArrowDown from './arrow-down.svg'
 
 // icon sewa
-import Casual from './Category/casual.svg'
-import Anime from './Category/anime.svg'
-import Traditional from './Category/Traditional.svg'
 import Saitama from './saitama.svg'
 import LikesButton from './Icon/Likes.svg'
 
@@ -72,8 +85,16 @@ import Shopee from './shopeepay.svg'
 import NotificationProduct from './notificationProduct.svg'
 
 // forum
-import AddForum from './addForum.svg'
-import ChatForum from './chatForum.svg'
+import Post from './posts.svg'
+import PostInactive from './posts-inactive.svg'
+import News from './news.svg'
+import NewsInactive from './news-inactive.svg'
+import Tips from './tips.svg'
+import TipsInactive from './tips-inactive.svg'
+import Logo from './TANAHIN 1.svg'
+import Thumb from './Thumb.svg'
+import Comment from './comment.svg'
+import Reply from './reply.svg'
 
 // funding
 import Filter from './Filter.svg'
@@ -111,9 +132,6 @@ export {
     Like,
     Search,
     Voice,
-    Tshirt,
-    Hoodie,
-    Pants,
     More,
     Timer,
     Auction,
@@ -127,7 +145,6 @@ export {
     ColorPalette,
     StoreIcon,
     StarReview,
-    BidSuccessHero,
     Stars,
     Discount,
     Truck,
@@ -141,11 +158,6 @@ export {
     BRI,
     NotificationProduct,
     Rent,
-    Casual,
-    Anime,
-    Traditional,
-    AddForum,
-    ChatForum,
     Accounts,
     Cash,
     Kebijakan,
@@ -154,5 +166,31 @@ export {
     NotificationOption,
     Password,
     Transaction,
-    Logout
+    Logout,
+    House,
+    Office,
+    Planting,
+    Person,
+    CategoriesLand,
+    BidSuccessHero,
+    Logo,
+    Post,
+    News,
+    Tips,
+    Jakarta,
+    Bandung,
+    Jogja,
+    Surabaya,
+    Bogor,
+    Solo,
+    PostInactive,
+    NewsInactive,
+    TipsInactive,
+    Thumb,
+    Comment,
+    Reply,
+    ChartLand,
+    ArrowUp,
+    ArrowDown,
+    Copy
 };

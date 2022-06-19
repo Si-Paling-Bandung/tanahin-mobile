@@ -1,3 +1,4 @@
+// import 'react-native-gesture-handler'
 import React from 'react';
 import { NativeBaseProvider, extendTheme } from 'native-base';
 import { NavigationContainer } from '@react-navigation/native';

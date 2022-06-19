@@ -13,20 +13,20 @@ import {
   Stack
 } from 'native-base';
 import {fonts} from '../../utils'
-import { LandingScreen } from '../../assets/dummy';
+import { Auth, LandingScreen } from '../../assets/dummy';
 
 const Landing = ({navigation}) => {
   // console.log('image: ',landingImage)
   return (
       <VStack bg={"white"} h={"full"} px={"25px"}>
         <Box w="full" h="600px" justifyContent={"center"} alignItems={"center"}>
-        <LandingScreen />
+        <Auth />
         </Box>
         <Stack space={"3"}>
-        <Button colorScheme={"blue"} fontFamily={fonts.primary[600]} fontSize={20} fontWeight={"bold"} onPress={() => navigation.navigate('SignUp')}>
+        <Button bg={'#4FAD39'} colorScheme={"success"} fontFamily={fonts.primary[600]} fontSize={20} fontWeight={"bold"} onPress={() => navigation.navigate('SignUp')}>
           Create a new account
         </Button>
-        <Button colorScheme={"blue"} variant="outline" fontFamily={fonts.primary[600]} fontSize={20} fontWeight={"bold"} onPress={() => navigation.navigate('SignIn')}>
+        <Button colorScheme={"success"} variant="outline" fontFamily={fonts.primary[600]} fontSize={20} fontWeight={"bold"} onPress={() => navigation.navigate('SignIn')}>
           Sign In
         </Button>
         <Button variant="unstyled">

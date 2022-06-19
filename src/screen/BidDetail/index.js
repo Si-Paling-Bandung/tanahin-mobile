@@ -43,12 +43,12 @@ const BidDetail = ({ navigation }) => {
                     <Text fontSize={'14px'} fontWeight={'semibold'} my={'10px'}>Your Bid</Text>
                     <HStack p={'5px'} bg={'gray.50'} borderRadius={'lg'}>
                             <Input placeholder='Enter your bid' w={'100%'} variant={'unstyled'} fontSize={'14px'}></Input>
-                        <Button colorScheme={'blue'} bg={'cyan.700'} ml={'auto'} onPress={() => navigation.navigate('BidSuccess')}>Submit</Button>
+                        <Button bg={'#4FAD39'} ml={'auto'} onPress={() => navigation.navigate('BidSuccess')}>Submit</Button>
                     </HStack>
                 </VStack>
                 <HStack alignItems={'center'}>
                     <Text fontSize={'14px'} fontWeight={'semibold'} mt={'25px'} mb={'15px'}>Top Bidder</Text>
-                    <Button variant={"link"} fontSize={'sm'} ml={'auto'} pt={5}>
+                    <Button variant={"link"} fontSize={'sm'} color={'#4FAD39'} ml={'auto'} pt={5}>
                         Lihat semua
                     </Button>
                 </HStack>

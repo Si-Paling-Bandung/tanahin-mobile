@@ -1,5 +1,5 @@
-import React from 'react'
-import { Box, Center, HStack, Image, ScrollView, VStack, Text, Icon, Divider } from 'native-base'
+import React, { useEffect, useState } from 'react'
+import { Box, Center, HStack, Image, ScrollView, VStack, Button, Text, Icon, Divider } from 'native-base'
 import {
   Coin,
   EditProfile,
@@ -18,8 +18,24 @@ import {
   LikesProfile,
   Logout,
 } from '../../assets/icons'
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { getData } from '../../utils/AsyncStorage';
 
-const Profile = () => {
+const Profile = ({navigation}) => {
+  const [data, setData] = useState([])
+
+  const logout = () => {
+    AsyncStorage.clear().then(res => {
+      console.log(res)
+        navigation.replace('SignIn')
+    })
+  }
+
+  useEffect(() => {
+    getData('users').then(res => {
+      setData(res)
+    })
+  })
   return (
     <VStack h={'full'} bg={'white'} px={"25px"}>
       <ScrollView>
@@ -33,8 +49,8 @@ const Profile = () => {
           />
           <Center py={1} ml={3}>
             <Box>
-              <Text fontSize={'sm'}>Lucinta Luna</Text>
-              <Text fontSize={'sm'}>0895047898773</Text>
+              <Text fontSize={'sm'}>{data?.data_user?.name}</Text>
+              <Text fontSize={'sm'}>{data?.data_user?.phone_number}</Text>
               <Text fontSize={'sm'}>Bandung, Jawa Barat</Text>
             </Box>
           </Center>
@@ -45,44 +61,31 @@ const Profile = () => {
           </HStack>
         </HStack>
         <Divider mb={'5'} />
-        <HStack rounded={'lg'} borderWidth={'1'} px={'3'} py={'5'}>
-          <Icon as={<GoPay />} />
-          <Text ml={'3'}>Rp. 65.000</Text>
-          <Divider orientation={'vertical'} mx={'3'}></Divider>
-          <Icon as={<Coin />} mr={'3'} />
-          <Text>1000 koin</Text>
-        </HStack>
-        <Text mt={'2'} color={'gray.400'}>Aktivitas Saya</Text>
+        <Text mt={'2'} color={'gray.400'}>My Activity</Text>
         <HStack justifyContent={'space-between'} my={'2'} mb={'3'}>
           <HStack>
             <Icon as={<Transaction />} mr={'2'} />
-            <Text>Transaksi</Text>
+            <Text>Transaction</Text>
           </HStack>
           <Icon as={<StoreIcon />} />
         </HStack>
         <Divider />
-        <HStack justifyContent={'space-between'} my={'2'} mb={'3'}>
-          <HStack>
-            <Icon as={<LikesProfile />} mr={'2'} />
-            <Text>Wishlist</Text>
-          </HStack>
-          <Icon as={<StoreIcon />} />
-        </HStack>
-        <Divider />
-        <HStack justifyContent={'space-between'} my={'2'} mb={'3'}>
+        <Button variant={'unstyled'} onPress={() => navigation.navigate('Profiling')}>
+        <HStack justifyContent={'space-between'} w={'360px'}>
           <HStack>
             <Icon as={<Accounts />} mr={'2'} />
-            <Text>Manage My Account</Text>
+            <Text>Profilling</Text>
           </HStack>
           <Icon as={<StoreIcon />} />
         </HStack>
+        </Button>
         <Divider />
 
         <Text mt={'2'} color={'gray.400'} mt={'5'} mb={'2'}>Umum</Text>
         <HStack justifyContent={'space-between'} my={'2'} mb={'3'}>
           <HStack>
             <Icon as={<NotificationOption />} mr={'2'} />
-            <Text>Pengaturan Notifikasi</Text>
+            <Text>Notification Setting</Text>
           </HStack>
           <Icon as={<StoreIcon />} />
         </HStack>
@@ -90,7 +93,7 @@ const Profile = () => {
         <HStack justifyContent={'space-between'} my={'2'} mb={'3'}>
           <HStack>
             <Icon as={<Password />} mr={'2'} />
-            <Text>Ubah Password</Text>
+            <Text>Change my password</Text>
           </HStack>
           <Icon as={<StoreIcon />} />
         </HStack>
@@ -98,25 +101,20 @@ const Profile = () => {
         <HStack justifyContent={'space-between'} my={'2'} mb={'3'}>
           <HStack>
             <Icon as={<Language />} mr={'2'} />
-            <Text>Pilihan Bahasa</Text>
-          </HStack>
-          <Icon as={<StoreIcon />} />
-        </HStack>
-        <HStack justifyContent={'space-between'} my={'2'} mb={'3'}>
-          <HStack>
-            <Icon as={<Kebijakan />} mr={'2'} />
-            <Text>Kebijakan</Text>
+            <Text>Change language</Text>
           </HStack>
           <Icon as={<StoreIcon />} />
         </HStack>
         <Divider />
-        <HStack justifyContent={'space-between'} my={'2'} mb={'3'}>
-          <HStack>
-            <Icon as={<Logout />} mr={'2'} />
-            <Text>Logout</Text>
+        <Button variant={'unstyled'} onPress={logout}>
+          <HStack justifyContent={'space-between'} w={'360px'}>
+            <HStack>
+              <Icon as={<Logout />} mr={'2'} />
+              <Text>Logout</Text>
+            </HStack>
+            <Icon as={<StoreIcon />} />
           </HStack>
-          <Icon as={<StoreIcon />} />
-        </HStack>
+        </Button>
         <Divider />
       </ScrollView>
     </VStack>

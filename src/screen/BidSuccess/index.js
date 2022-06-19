@@ -22,7 +22,7 @@ const BidSuccess = ({ navigation }) => {
                         </Text>
                     </Stack>
                 </Center>
-                <Button colorScheme={"cyan"} bg="#2C96CA" fontWeight={"bold"} fontFamily={'heading'} onPress={() => navigation.replace('MainApp')}>Go to Home</Button>
+                <Button colorScheme={"cyan"} bg="#4FAD39" fontWeight={"bold"} fontFamily={'heading'} onPress={() => navigation.replace('MainApp')}>Go to Home</Button>
             </Stack>
         </VStack>
     )

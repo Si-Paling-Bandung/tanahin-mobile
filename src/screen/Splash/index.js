@@ -2,18 +2,24 @@ import { VStack, Text, HStack, Image, View, Icon } from 'native-base';
 import React, { useEffect, useState } from 'react';
 import { BackgroundSplash, HeroSplash, Logo } from '../../assets/dummy';
 import { ImageBackground } from 'react-native'
-
+import { getData } from '../../utils/AsyncStorage';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const Splash = ({ navigation }) => {
     const [user] = useState(false)
     useEffect(() => {
         setTimeout(() => {
-            if (user) {
-              navigation.replace('MainApp');
-            } else {
-              navigation.replace('Landing');
-            }
-        }, 3500);
+            // AsyncStorage.clear()
+            // navigation.replace('Landing')
+            getData('token').then(res => {
+                if(!res){
+                    navigation.replace('Landing')
+                }
+                navigation.replace('MainApp')
+            }).catch(err => {
+                    console.log(err)
+                }) 
+            }, 3500);
     }, [navigation]);
 
     return (

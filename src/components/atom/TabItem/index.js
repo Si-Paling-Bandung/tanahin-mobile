@@ -20,7 +20,7 @@ const TabItem = ({ title, active, onPress, onLongPress }) => {
         if (title === 'Forum') {
             return active ? <ForumActive /> : <Forum />;
         }
-        if (title === 'Funding') {
+        if (title === 'Research') {
             return active ? <FundingActive /> : <Funding />;
         }
         if (title === 'Profile') {
@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
     },
     text: active => ({
         fontSize: 10,
-        color: active ? '#2C96CA' : '#CECECE',
+        color: active ? '#4FAD39' : '#CECECE',
         fontFamily: fonts.primary.normal,
         marginTop: 4,
     }),

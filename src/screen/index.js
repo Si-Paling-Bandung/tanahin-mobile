@@ -15,13 +15,17 @@ import BidDetail from "./BidDetail";
 import BidSuccess from "./BidSuccess";
 import DetailProductBuy from "./DetailProductBuy";
 import ProductBuyDetail from "./ProductBuyDetail";
-import ProductBuySend from "./ProductBuySend";
 import ProductBuyVirtual from "./ProductBuyVirtual";
-import ProductBuyNotification from './ProductBuyNotification'
+import ProductBuyPayment from "./ProductBuyPayment";
+import ProductBuyFinish from "./ProductBuyFinish";
 import Rents from "./Rents";
 import Sell from './Sell'
 import RentsDetail from "./RentsDetail";
 import FundDetail from "./FundDetail";
+import ProductBuySuccess from './ProductBuySuccess'
+import Profiling from "./Profiling";
+import ProfilingData from "./ProfilingData";
+import ProfilingToken from "./ProfilingToken";
 
 export {
     FundDetail,
@@ -42,10 +46,14 @@ export {
     BidSuccess,
     DetailProductBuy,
     ProductBuyDetail,
-    ProductBuySend,
     ProductBuyVirtual,
-    ProductBuyNotification,
+    ProductBuyPayment,
+    ProductBuySuccess,
     Rents,
     Sell,
-    RentsDetail
+    RentsDetail,
+    ProductBuyFinish,
+    Profiling,
+    ProfilingData,
+    ProfilingToken
 };

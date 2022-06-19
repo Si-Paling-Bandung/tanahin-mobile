@@ -4,6 +4,8 @@ import Logo from './Logo.svg'
 import BackgroundSplash from './background_splash.png'
 import HeroSplash from './hero_splash.svg'
 import DataStoreHero from './dataStore_success.svg'
+import DummyResearch from './dummy-research.svg'
+import Auth from './auth.svg'
 
 export {
     Person,
@@ -11,5 +13,7 @@ export {
     BackgroundSplash,
     HeroSplash,
     Logo,
-    DataStoreHero
+    DataStoreHero,
+    DummyResearch,
+    Auth
 }
