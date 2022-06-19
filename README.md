@@ -9,6 +9,14 @@ Tanahin is a platform for selling, buying, repaying, and auctioning land with su
 3. M. Faiz Triputra (Backend Developer) : https://www.linkedin.com/in/mfaiztriputra/
 4. David William da Costa (Mobile Developer) : https://www.linkedin.com/in/davidwilliamdacosta/
 
+## Link Dashboard Admin & APK
+
+APK : https://drive.google.com/drive/folders/1X6NUJQImLYd2qeEMwz62TmknPvz7gxEs?usp=sharing
+
+Website : https://tanahin.mfaiztriputra.id/
+U: admin@gmail.com
+P: password
+
 ## Feature
 1. Profiling integrated with 3rd party (Brick)
 2. Installment
